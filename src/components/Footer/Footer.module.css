@@ -1,0 +1,243 @@
+.footer_container {
+  margin: 0 auto;
+  margin-top: 125px;
+  padding: 0 10.4%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+}
+
+.small_link {
+  display: none;
+}
+
+.companyInfo {
+  display: flex;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.list_title {
+  margin-bottom: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #656566;
+}
+
+.menu_container {
+  display: flex;
+}
+
+.companyInfo > div > ul > li,
+.menu_container > div > ul > li {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.companyInfo > :nth-child(1) {
+  margin-right: 6.4vw;
+  width: 200px;
+}
+
+.menu_container > :nth-child(1) {
+  margin-right: 0vw;
+  width: 195px;
+}
+
+.invisible_title {
+  opacity: 0;
+  margin-bottom: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #656566;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contactInfo > h4 {
+  margin-top: 2px;
+  margin-bottom: 18px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #656566;
+}
+
+.contactInfo > div > div {
+  margin: 20px 0 17px 0;
+  text-align: right;
+}
+
+.contactInfo > div > div > img {
+  margin-left: 0.7vw;
+}
+
+.contactInfo > p {
+  font-family: 'Inter';
+}
+
+.copyright {
+  margin: 70px 0 20px 0;
+}
+
+.copyright > p,
+.copyright > p > a {
+  width: 277px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+}
+.copyright > p > a {
+  text-decoration: underline;
+}
+
+@media (max-width: 1240px) {
+  .footer_container {
+    margin-top: 75px;
+    font-size: 14px;
+    padding: 0 5%;
+  }
+  .companyInfo {
+    font-size: 14px;
+  }
+  .companyInfo > div > ul > li,
+  .menu_container > div > ul > li {
+    margin-bottom: 10px;
+    width: 90%;
+  }
+
+  .companyInfo > :nth-child(1) {
+    margin-right: 3vw;
+    width: 150px;
+  }
+
+  .menu_container > :nth-child(1) {
+    margin-right: 2vw;
+    width: 120px;
+  }
+
+  .menu_container > :nth-child(2) {
+    margin-right: 0vw;
+    width: 130px;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer_container {
+    margin-top: 55px;
+    padding: 10px 5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contactInfo {
+    margin-top: 50px;
+    align-items: center;
+  }
+  .copyright > p,
+  .copyright > p > a {
+    text-align: center;
+  }
+  .contactInfo > div > div {
+    margin: 30px;
+  }
+  .copyright {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer_container {
+    align-items: flex-start;
+    margin-top: 48px;
+    padding: 10px 5%;
+    background-color: #0e1014;
+  }
+  .companyInfo {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  .list_title {
+    font-size: 12px;
+  }
+  .companyInfo > :nth-child(1) {
+    width: 100%;
+    margin: 20px 0 0 0;
+    font-size: 14px;
+  }
+  .menu_container {
+    margin-top: 15px;
+  }
+  .menu_container > :nth-child(1) {
+    margin-right: 30px;
+  }
+  .menu_container > div > ul > li {
+    margin-bottom: 7px;
+  }
+  .small_link {
+    display: block;
+  }
+  .big_link {
+    display: none;
+  }
+  .contactInfo {
+    margin-top: 23px;
+    font-size: 16px;
+    align-items: flex-start;
+  }
+
+  .contactInfo > h4 {
+    font-size: 12px;
+  }
+  .contactInfo > :nth-child(2) {
+    margin: 0;
+    padding: 0;
+  }
+  .copyright > p,
+  .copyright > p > a {
+    text-align: left;
+  }
+
+  .contactInfo > div > div {
+    margin: 10px 90px 0 0;
+    padding: 0;
+  }
+  .contactInfo > div > div > img {
+    margin-right: 3.5vw;
+  }
+  .contactInfo > :nth-child(3) {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .copyright {
+    margin: 50px 0;
+  }
+  .copyright > p {
+    margin-bottom: 5px;
+  }
+}

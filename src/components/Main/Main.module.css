@@ -1,0 +1,212 @@
+.main__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1 1 auto;
+  max-width: 1440px;
+  padding: 0 10.4%;
+  margin: 92px auto;
+}
+
+.main__earnMore {
+  width: 362px;
+}
+
+.main__earnMore > :nth-child(1) {
+  font-family: 'inter';
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.main__earnMore > :nth-child(2) {
+  font-family: 'inter';
+  font-weight: 900;
+  font-size: 47px;
+  line-height: 58px;
+  background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.main__earnMore > :nth-child(3) {
+  margin-top: 32px;
+  width: 275px;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.main__freeConslt > p {
+  margin-top: 18px;
+  width: 300px;
+  font-family: 'Inter';
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+}
+
+.main__freeConslt > p > span {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.our_bonus_mini {
+  display: none;
+}
+.our_bonus {
+  margin-top: 40px;
+  display: grid;
+  grid-template-areas:
+    'widgets dashboard'
+    'skype days';
+  gap: 30px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: right;
+}
+
+.our_bonus > div > h3 {
+  margin: 0 0 5px 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.our_bonus > :nth-child(1) {
+  text-align: right;
+  grid-area: 'widgets';
+  width: 135px;
+}
+
+.our_bonus > :nth-child(2) {
+  grid-area: 'dashboard';
+  width: 135px;
+}
+
+.our_bonus > :nth-child(3) {
+  grid-area: 'skype';
+  width: 135px;
+}
+
+.our_bonus > :nth-child(4) {
+  grid-area: 'days';
+  width: 135px;
+}
+
+.agree_button {
+  margin-top: 58px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.agree_button > button {
+  padding: 20px 36px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #e4e5ea;
+  background: #4077f3;
+  border: none;
+}
+
+@media (max-width: 1240px) {
+  .main__container {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 800px) {
+  .main__container {
+    margin: 50px auto;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .main__container {
+    padding: 0 1%;
+    margin: 48px 0 0 3%;
+  }
+  .main__earnMore {
+    width: 100%;
+  }
+  .main__earnMore > :nth-child(1) {
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0;
+  }
+  .main__earnMore > :nth-child(2) {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .main__earnMore > :nth-child(3) {
+    margin-top: 15px;
+  }
+
+  .main__freeConslt > p > span {
+    font-size: 14px;
+  }
+
+  .main__freeConslt > p {
+    margin-top: 45px;
+    text-align: start;
+  }
+  .our_bonus {
+    display: none;
+  }
+  .agree_button {
+    display: none;
+  }
+  .our_bonus_mini {
+    margin: 16px 0 0 5%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #e4e5ea;
+  }
+  .our_bonus_mini > div {
+    margin-bottom: 14px;
+    gap: 28px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .our_bonus_mini > div > p {
+    position: relative;
+    display: inline-block;
+  }
+  .our_bonus_mini > div > p::before {
+    content: ' ';
+    background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+    position: absolute;
+    top: 8px;
+    left: -15px;
+    width: 10px;
+    height: 1px;
+  }
+}
